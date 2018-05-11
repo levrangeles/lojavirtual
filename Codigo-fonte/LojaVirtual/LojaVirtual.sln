@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{FC8F598F-752F-4207-96D7-F8428AC774F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{3A6731A1-FE5B-4744-9FC3-27948D526F2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{2E68C1C2-99A7-46AF-B37B-56B2DF294CD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{7201DD8C-2AF9-49D4-9DDA-CE49145633DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{FBE29878-ACA8-4E92-9488-FBFBBC001C2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{CAD44072-1238-4027-8426-BD56E55E4B1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Infra.Data", "src\LojaVirtual.Infra.Data\LojaVirtual.Infra.Data.csproj", "{EB3126FB-83AE-40F4-B1AD-85674756AA90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Domain", "src\LojaVirtual.Domain\LojaVirtual.Domain.csproj", "{165A4CBC-13BC-44EF-AEAC-2C64B6D1D96A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Infra.Data.Tests", "src\LojaVirtual.Infra.Data.Tests\LojaVirtual.Infra.Data.Tests.csproj", "{D9E8CA8E-C7D4-423C-82A9-4D08C919C38F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Domain.Tests", "src\LojaVirtual.Domain.Tests\LojaVirtual.Domain.Tests.csproj", "{00880339-5E4F-461F-A903-427288FB6587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Application", "src\LojaVirtual.Application\LojaVirtual.Application.csproj", "{E5778B6A-9177-4AE4-BDA1-C4BA7CEE5DC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Presentation.MVC", "src\LojaVirtual.Presentation.MVC\LojaVirtual.Presentation.MVC.csproj", "{DA55259B-B03E-4B53-8ACD-805A10C1EC53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB3126FB-83AE-40F4-B1AD-85674756AA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3126FB-83AE-40F4-B1AD-85674756AA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3126FB-83AE-40F4-B1AD-85674756AA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3126FB-83AE-40F4-B1AD-85674756AA90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{165A4CBC-13BC-44EF-AEAC-2C64B6D1D96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{165A4CBC-13BC-44EF-AEAC-2C64B6D1D96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{165A4CBC-13BC-44EF-AEAC-2C64B6D1D96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{165A4CBC-13BC-44EF-AEAC-2C64B6D1D96A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E8CA8E-C7D4-423C-82A9-4D08C919C38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E8CA8E-C7D4-423C-82A9-4D08C919C38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E8CA8E-C7D4-423C-82A9-4D08C919C38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E8CA8E-C7D4-423C-82A9-4D08C919C38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00880339-5E4F-461F-A903-427288FB6587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00880339-5E4F-461F-A903-427288FB6587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00880339-5E4F-461F-A903-427288FB6587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00880339-5E4F-461F-A903-427288FB6587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5778B6A-9177-4AE4-BDA1-C4BA7CEE5DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5778B6A-9177-4AE4-BDA1-C4BA7CEE5DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5778B6A-9177-4AE4-BDA1-C4BA7CEE5DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5778B6A-9177-4AE4-BDA1-C4BA7CEE5DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA55259B-B03E-4B53-8ACD-805A10C1EC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA55259B-B03E-4B53-8ACD-805A10C1EC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA55259B-B03E-4B53-8ACD-805A10C1EC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA55259B-B03E-4B53-8ACD-805A10C1EC53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBE29878-ACA8-4E92-9488-FBFBBC001C2C} = {7201DD8C-2AF9-49D4-9DDA-CE49145633DB}
+		{CAD44072-1238-4027-8426-BD56E55E4B1E} = {7201DD8C-2AF9-49D4-9DDA-CE49145633DB}
+		{EB3126FB-83AE-40F4-B1AD-85674756AA90} = {FBE29878-ACA8-4E92-9488-FBFBBC001C2C}
+		{165A4CBC-13BC-44EF-AEAC-2C64B6D1D96A} = {2E68C1C2-99A7-46AF-B37B-56B2DF294CD0}
+		{D9E8CA8E-C7D4-423C-82A9-4D08C919C38F} = {FBE29878-ACA8-4E92-9488-FBFBBC001C2C}
+		{00880339-5E4F-461F-A903-427288FB6587} = {2E68C1C2-99A7-46AF-B37B-56B2DF294CD0}
+		{E5778B6A-9177-4AE4-BDA1-C4BA7CEE5DC2} = {3A6731A1-FE5B-4744-9FC3-27948D526F2E}
+		{DA55259B-B03E-4B53-8ACD-805A10C1EC53} = {FC8F598F-752F-4207-96D7-F8428AC774F7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F203806-55D6-4859-BE55-34510E9A7D40}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4fb53073-9994-438f-a2dd-20c83c1d4171" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://pessoa-hom.tjmt.jus.br/api/soapservice.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SOAPService.xsd" MetadataType="Schema" ID="94e781af-7e8e-40e2-8766-6869ade5986a" SourceId="1" SourceUrl="http://pessoa-hom.tjmt.jus.br/api/SOAPService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SOAPService1.xsd" MetadataType="Schema" ID="dda32b83-9160-446a-b21d-0cf6ad7c81ee" SourceId="1" SourceUrl="http://pessoa-hom.tjmt.jus.br/api/SOAPService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SOAPService.wsdl" MetadataType="Wsdl" ID="9e3b513d-9113-4e22-a028-2f5bc07fc6b7" SourceId="1" SourceUrl="http://pessoa-hom.tjmt.jus.br/api/SOAPService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SOAPService1.wsdl" MetadataType="Wsdl" ID="fe31dc8f-b0e4-480c-8af8-9177ae146154" SourceId="1" SourceUrl="http://pessoa-hom.tjmt.jus.br/api/soapservice.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
