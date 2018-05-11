@@ -1,0 +1,41 @@
+﻿@model IEnumerable<LojaVirtual.Domain.Dto.ProdutoDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Produtos</h2>
+
+<p>
+    @Html.ActionLink("Novo Cadastro", "Cadastro")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nome
+        </th>
+        <th>
+            Preço
+        </th>
+        <th></th>
+    </tr>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    }
+}
+
+</table>

@@ -10,9 +10,7 @@ namespace LojaVirtual.Infra.Data.EntityConfiguration
             ToTable("Pedido");
 
             HasKey(c => c.Id);
-            Property(c => c.Data).IsRequired();
-
-            HasRequired(c => c.Cliente);
+            Property(c => c.ClienteId).IsRequired();
 
             HasMany(c => c.Produtos)
                 .WithMany(c => c.Pedidos)

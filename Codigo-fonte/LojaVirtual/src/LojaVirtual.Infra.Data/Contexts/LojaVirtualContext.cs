@@ -1,6 +1,7 @@
 ﻿using LojaVirtual.Domain;
 using LojaVirtual.Infra.Data.Interfaces;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 
 namespace LojaVirtual.Infra.Data.Contexts
@@ -14,6 +15,12 @@ namespace LojaVirtual.Infra.Data.Contexts
         public LojaVirtualContext() : base("lojavirtual")
         {
 
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
         public T Add<T>(T obj) where T : class

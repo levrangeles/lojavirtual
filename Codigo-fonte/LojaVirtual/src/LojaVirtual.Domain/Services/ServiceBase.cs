@@ -12,32 +12,32 @@ namespace LojaVirtual.Domain.Services
             Repository = repository;
         }
 
-        public T Add(T obj)
+        public virtual T Add(T obj)
         {
             return Repository.Add(obj);
         }
 
-        public IList<T> GetAll()
+        public virtual IList<T> GetAll()
         {
             return Repository.GetAll();
         }
 
-        public T GetById(int id)
+        public virtual T GetById(int id)
         {
             return Repository.GetById(id);
         }
 
-        public void Remove(T obj)
+        public virtual void Remove(T obj)
         {
             Repository.Remove(obj);
         }
 
-        public void RemoveBydId(int id)
+        public virtual void RemoveBydId(int id)
         {
             Repository.RemoveBydId(id);
         }
 
-        public T Update(T obj)
+        public virtual T Update(T obj)
         {
             return Repository.Update(obj);
         }

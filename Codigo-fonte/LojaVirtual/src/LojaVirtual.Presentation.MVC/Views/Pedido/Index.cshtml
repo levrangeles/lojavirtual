@@ -1,0 +1,35 @@
+﻿@model IEnumerable<LojaVirtual.Domain.Dto.PedidoDTO>
+
+@{
+    ViewBag.Title = "Pedidos";
+}
+
+<h2>Pedidos</h2>
+
+<p>
+    @Html.ActionLink("Novo Cadastro", "Cadastro")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nome do cliente
+        </th>
+        <th></th>
+    </tr>
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClienteNome)
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        }
+    }
+
+</table>

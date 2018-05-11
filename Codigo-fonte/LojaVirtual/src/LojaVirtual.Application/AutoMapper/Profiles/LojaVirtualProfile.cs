@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using LojaVirtual.Domain;
 using LojaVirtual.Domain.Dto;
+using LojaVirtual.Domain.Services.Interfaces;
 
 namespace LojaVirtual.Application.AutoMapper.Profiles
 {

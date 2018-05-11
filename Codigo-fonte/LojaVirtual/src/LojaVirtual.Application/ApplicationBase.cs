@@ -17,33 +17,33 @@ namespace LojaVirtual.Application
             Service = service;
         }
 
-        public TDto Add(TDto obj)
+        public virtual TDto Add(TDto obj)
         {
             var entity = Mapper.Map<T>(obj);
             return Mapper.Map<TDto>(Service.Add(entity));
         }
 
-        public IList<TDto> GetAll()
+        public virtual IList<TDto> GetAll()
         {
             return Mapper.Map<IList<TDto>>(Service.GetAll());
         }
 
-        public TDto GetById(int id)
+        public virtual TDto GetById(int id)
         {
             return Mapper.Map<TDto>(Service.GetById(id));
         }
 
-        public void Remove(TDto obj)
+        public virtual void Remove(TDto obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public void RemoveBydId(int id)
+        public virtual void RemoveBydId(int id)
         {
             Service.RemoveBydId(id);
         }
 
-        public TDto Update(TDto obj)
+        public virtual TDto Update(TDto obj)
         {
             return Mapper.Map<TDto>(Service.Update(Mapper.Map<T>(obj)));
         }
